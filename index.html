@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>generator</title>
+</head>
+<body>
+    
+<div class="generate">
+    <h1>Password generation</h1>
+    <div class="generate__row">
+        <label for="length">Password length</label>&nbsp;&nbsp;
+        <input id="length" type="number">
+    </div>
+    <div class="generate__row">
+        <label for="letter__yes">Add letters</label>&nbsp;&nbsp;
+        <input id="letter__yes" type="radio" name="letters"  checked>
+        <label for="letter__yes">Yes</label>
+        <input id="letter__no" type="radio" name="letters" >
+        <label for="letter__no">No</label>
+
+    </div>
+    <div class="generate__row">
+        <label for="numbers">Add numbers</label>&nbsp;&nbsp;
+        <input type="checkbox" id="numbers">
+    </div>
+    <div class="generate__row">
+        <label for="symbols">Add symbols</label>&nbsp;&nbsp;
+        <input type="checkbox" id="symbols">
+    </div>
+    <button class="generator__generate">Generate</button>
+    <p class="generate__password"></p>
+    <button class="copy__password">Copy</button>
+    <p class="generate__error"></p>
+
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
